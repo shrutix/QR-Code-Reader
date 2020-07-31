@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCodeReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="61cddf9cfe50f4baaa8f472c253d1cb4-basic-square-outline-by-vexels" translatesAutoresizingMaskIntoConstraints="NO" id="mXI-ys-eio">
+                                <rect key="frame" x="47" y="288" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="6gz-sB-Ko5"/>
+                                    <constraint firstAttribute="width" constant="320" id="LXz-8p-gcO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="380" id="mO4-Ji-m3D"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="udp-88-ZFq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mXI-ys-eio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27l-QT-Sf0"/>
+                            <constraint firstItem="mXI-ys-eio" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Qa-KO-dMJ"/>
+                            <constraint firstItem="mXI-ys-eio" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NUg-cG-ZxD"/>
+                            <constraint firstItem="mXI-ys-eio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bN7-OM-rJg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="squareOutline" destination="mXI-ys-eio" id="FVo-V1-N5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="61cddf9cfe50f4baaa8f472c253d1cb4-basic-square-outline-by-vexels" width="512" height="512"/>
+    </resources>
+</document>
